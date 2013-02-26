@@ -1,6 +1,6 @@
-package sorting;
+package sorting.mergesort;
 
-public class MyMergeSort extends Print{
+public class MyMergeSort extends Utils{
 	
 	  private static int[] numbers;
 	  private static int[] helper;
@@ -13,6 +13,8 @@ public class MyMergeSort extends Print{
 		
 		sort(array);
 		
+		println("Finished!!");
+		exit();
  	}
 
 	  public static void sort(int[] values) {
@@ -24,11 +26,22 @@ public class MyMergeSort extends Print{
 	
 	  private static void mergesort(int low, int high) {
 		    // Check if low is smaller then high, if not then the array is sorted
+		  
+		  println("********************* in outer if *******************************");
+	      println("low : "+low);
+	      println("high : "+high);
+	      println();
+	      sleep(1);
 		    if (low < high) {
 		      // Get the index of the element which is in the middle
 		      
 		      int middle = low + (high - low) / 2;
-		      println("low is "+low); println("high is "+high); println("middle is "+middle);
+		      sleep(1);
+		      println("low : "+low);
+		      println("high : "+high);
+		      println("middle : "+middle);
+		      sleep(1);
+		      println();
 		      // Sort the left side of the array
 		      mergesort(low, middle);
 		      // Sort the right side of the array
@@ -67,10 +80,12 @@ public class MyMergeSort extends Print{
 		      k++;
 		      i++;
 		    }
-
-		    System.out.println("Numbers are ");
+		    sleep(1);
+		    print("Current sorted numbers : ");
 		    for(int counter = 0; counter < numbers.length; ++counter){
-		    	println(numbers[counter]);
+		    	sleep(1);
+		    	print(numbers[counter]+", ");
 		    }
+		    println("");
 		  }
 }

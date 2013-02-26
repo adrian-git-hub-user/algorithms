@@ -1,6 +1,6 @@
-package sorting;
+package sorting.mergesort;
 
-public class MergeSort extends Print{
+public class MergeSort extends Utils{
 	  private int[] numbers;
 	  private int[] helper;
 

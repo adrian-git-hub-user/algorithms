@@ -1,4 +1,4 @@
-package sorting;
+package sorting.mergesort;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
