@@ -6,16 +6,6 @@ public class MyMergeSort extends Utils{
 	  private static int[] helper;
 	  
 	  private static int number;
-	  
-	public static void main(String args[]){
-		
-		int[] array = {1 , 0 , 2 , 7 , 3};
-		
-		sort(array);
-		
-		println("Finished!!");
-		exit();
- 	}
 
 	  public static void sort(int[] values) {
 		    numbers = values;
