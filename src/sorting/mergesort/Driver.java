@@ -1,6 +1,8 @@
 package sorting.mergesort;
 
-public class Driver extends Utils{
+import utils.PrintUtils;
+
+public class Driver extends PrintUtils{
 	
 	public static void main(String args[]){
 		

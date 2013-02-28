@@ -1,6 +1,6 @@
-package sorting.mergesort;
+package utils;
 
-public class Utils {
+public class PrintUtils {
 	
 	public static void exit(){
 		System.exit(0);
@@ -11,6 +11,10 @@ public class Utils {
 	}
 	
 	public static void println(String str){
+		System.out.println(str);
+	}
+	
+	public static void println(Long str){
 		System.out.println(str);
 	}
 	
@@ -34,4 +38,7 @@ public class Utils {
 		}
 	}
 	
+	public static long getTime(){
+		return System.currentTimeMillis();
+	}
 }

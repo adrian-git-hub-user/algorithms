@@ -1,6 +1,8 @@
 package sorting.mergesort;
 
-public class MyMergeSort extends Utils{
+import utils.PrintUtils;
+
+public class MyMergeSort extends PrintUtils{
 	
 	  private static int[] numbers;
 	  private static int[] helper;
